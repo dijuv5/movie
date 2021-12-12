@@ -17,6 +17,7 @@
 
 		<!-- Loading main css file -->
 		<link rel="stylesheet" href="../assets/css/style.css">
+		<link rel="stylesheet" href="../assets/css/jquery-ui.css">
 		
 		<!--[if lt IE 9]>
 		<script src="../assets/js/ie-support/html5.js"></script>
@@ -228,6 +229,7 @@
 		<script src="../assets/js/jquery-1.11.1.min.js"></script>
 		<script src="../assets/js/plugins.js"></script>
 		<script src="../assets/js/app.js"></script>
+		<script src="../assets/js/jquery-ui.js"></script>
 		<!-- <script src="../assets/generic/generic.js"></script> -->
 		<script type="text/javascript">
 		$(document).ready(function(){
@@ -236,6 +238,9 @@
 			});
 			//loadslider($("#currentslider"));
 			getmovie();
+			 $( document ).tooltip({
+				  position: { my: "left+15 center", at: "left center" }
+			 });
 		});
 		function getmovie() {
 			var yr=$("#selyear").val();
@@ -258,6 +263,9 @@
 							$("#divbestmovie").html(divhtml);
 							});
 				});
+			 $( document ).tooltip({
+				  position: { my: "left+15 center", at: "left center" }
+			 });
 		}
 		</script>
 </body>
